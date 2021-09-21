@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Интернет магазин RadioNiroN</title>
+    <link rel="stylesheet" href="sitestylestore.css">
+
+    <script type="text/javascript">
+        function openImageWindow(src) {
+            var image = new Image();
+            image.src = src;
+            window.open(src, "Image");
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <div class="container"></div>
+    <div class="header">
+        <div class="head_logo"></div>
+        <ul class="head">
+            <li><a href=index.html>Главная</a></li>
+            <li><a href=catalog.html>Каталог</a>
+                <ul>
+                    <li><a href=catalog/XiaomiMW-TW.html>Xiaomi MiJia Walkie-Talkie White</a></li>
+                    <li><a href=catalog/MotorolaTLKRT41P.html>Motorola TLKR T41 Pink</a></li>
+                    <li><a href=catalog/MotorolaMBP161Timer.html>Motorola MBP161 Timer</a></li>
+                </ul>
+            </li>
+            <li><a href=contacts.html>Контакты</a></li>
+        </ul>
+    </div>
+    <h1>Контакты</h1>
+    <!параметры изображения добавлены на случай отключения CSS>
+        <div class="box_textContacts">
+            <form>
+                <fieldset>
+                    <legeng>
+                        <h3>Напишите нам</h3>
+                    </legeng>
+                    Ваше Имя:<br>
+                    <input type="text" color="blue" placeholder="Ваше Имя" size="38"><br>
+                    Ваш E-mail:<br>
+                    <input class="mail" type="text" placeholder="E-mail" size="38"><br>
+                    Тема сообщения:<br>
+                    <input type="text" placeholder="Тема" size="38"><br><br>
+                    <textarea name="comment" cols="40" rows="6" placeholder="Введите Ваше сообщение"></textarea><br>
+                    <div class="button">
+                        <p><input type="submit" value="Отправить">
+                            <input type="reset" value="Очистить">
+                        </p>
+                    </div>
+                </fieldset>
+            </form>
+            <p>
+            <h3 style="font-size:24px; padding-bottom: 10px">Адрес</h3>
+            <ul>
+                <li>Вы можете связаться с Нами по номеру телефона: 8(800)5555-565</li><br>
+                <li>Наш Адрес: г.Москва, ТЦ "Афимолл"</li><br>
+                <li>E-mail: manager@radioniron.ru</li>
+            </ul><br>
+
+        </div>
+        <div class="map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3044e070edcfa2c8bd93582b52485db0a52af537de4f5016cfb6ab36f7a5c15a&amp;width=100%&amp;height=374&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+        <div class="footer">
+
+            <p>Copyright &copy; Dmitriy Skvortsov</p>
+        </div>
+
+</body>
+
+</html>

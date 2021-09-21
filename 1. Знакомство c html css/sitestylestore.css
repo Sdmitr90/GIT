@@ -1,0 +1,415 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+
+/*заполнение отображения сайта в полном окне*/
+* {
+    margin: 0 0;
+    padding: 0 0;
+}
+
+body {
+    background-color: #f8f8f8;
+
+}
+
+.container {
+    background-color: #dfdfdf;
+    height: 12px;
+    width: 300px;
+    margin: auto;
+}
+
+.header {
+    height: 130px;
+    background: url(img/konferenc-svjazjpg.jpg) no-repeat center;
+}
+
+/*Меню*/
+.head_logo {
+    background: url(img/logopng.png) center no-repeat;
+    background-size: 160px;
+    border-radius: 70%;
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
+    margin-left: 15px;
+    float: left
+}
+
+.head {
+    width: inherit;
+    padding-top: 20px;
+    padding-right: 20px;
+    text-align: right;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.head > li {
+    display: inline-block;
+
+}
+
+.header li a {
+
+    border: 1px solid azure;
+    border-style: inset;
+    background-color: #f8f8f8;
+    margin-right: 10px;
+    color: darkblue;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+
+}
+
+.head li ul {
+    position: absolute;
+}
+
+.head li ul li {
+    margin-top: 20px;
+}
+
+.head ul {
+    list-style-type: none;
+    text-align: left;
+    display: none;
+}
+
+/* псевдокласс меню */
+.head li a:hover {
+    color: deepskyblue;
+}
+
+.head li a:active {
+    color: crimson;
+}
+
+.head li:hover ul {
+    display: table-cell;
+}
+
+/*минимальные размеры отображения сайта*/
+body {
+
+    min-height: calc(100vh - 100px);
+}
+
+/*Основной заголовок*/
+h1 {
+    width: 100%;
+    height: auto float: left;
+    text-align: center;
+    color: #2e353d;
+    font-size: 40px;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
+
+/*Заголовок краткого описания*/
+.short_text h3 {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+    background: #eaeaea;
+    text-align: center;
+   margin: auto;
+    overflow: hidden;
+    width: 600px;
+
+}
+
+/*изображения товаров*/
+.short_text img {
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-left: 80px;
+    width: 389px;
+    border-radius: 30%;
+    outline-style: groove;
+    outline-color: aqua;
+    float: left;
+}
+
+.short_text img:hover {
+    outline-style: inherit;
+}
+
+/*Кнопка купить*/
+.short_text p input {
+    box-shadow: 1px 13px 19px -4px #fff6af;
+    background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    background-color: #ffec64;
+    border-radius: 7px;
+    border: 2px solid #ffaa22;
+    display: inline-block;
+    cursor: pointer;
+    color: #333333;
+    font-family: Georgia;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 9px 25px;
+    text-decoration: none;
+    text-shadow: -2px 1px 0px #ffee66;
+}
+
+.short_text p input:active {
+    position: relative;
+    top: 1px;
+}
+
+.short_text p input:hover {
+    background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+    background-color: #ffab23;
+}
+
+/*изображение логотипа*/
+.logo {
+    margin-top: 0px;
+    margin-left: 5%;
+    width: 289px;
+    border-radius: 50%;
+    outline: inherit;
+    display: inline-block;
+    float: left;
+}
+
+/*изображения каталога*/
+.catalog img {
+    width: 189px;
+    border-radius: 30%;
+    outline-style: groove;
+    outline-color: aqua;
+}
+
+.catalog img:hover {
+    outline-style: inherit;
+}
+
+/*рассположение ссылок на товар каталога*/
+.catalog .product {
+
+    width: 33%;
+    text-align: center;
+    margin-left: 0px;
+    display: inline-block;
+    margin-bottom: 300px;
+}
+
+/*Paragraph Описания*/
+.short_text p:first-letter {
+    font-size: 30px;
+    color: orange;
+}
+
+.catalog a {
+    background: #fff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.catalog a:hover {
+    background: #ffec64;
+}
+
+/*краткое описание товара*/
+.short_text p {
+    color: #707070;
+    font-size: 18px;
+    font-weight: 200;
+    font-style: italic;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 31px;
+    overflow: hidden;
+    width: 600px;
+    margin: auto;
+}
+
+/*характеристики товара*/
+
+.short_text table {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    border-spacing: 0px;
+    overflow: hidden;
+    text-align: center;
+    width: 600px;
+    margin: auto;
+
+}
+
+.short_text table tr:nth-child(5) td {
+    border-bottom-right-radius: 10px;
+}
+
+.short_text table tr:nth-child(1) td {
+    border: 1px solid #D3D3D3;
+    width: 15px;
+    color: orange;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: center;
+}
+
+.short_text table tr:nth-child(2) td {
+    height: 30px;
+    font-size: 18px;
+    border-top-right-radius: 10px;
+}
+
+.short_text table tr:nth-child(n+2) td {
+    width: 600px;
+    border: 1px solid #D3D3D3;
+    color: black;
+    text-align: center;
+
+}
+
+.short_text ul {
+    color: dimgray;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 10px;
+    list-style-type: none;
+    width: 600px;
+    overflow: hidden;
+      margin: auto;
+}
+
+/*описание товара*/
+.short_text .box_text p {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+  margin: auto;
+    width: 600px;
+}
+
+/*Описание сайта- главная страница*/
+.index {
+    color: #707070;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+
+    padding-top: 50px;
+    margin-bottom: 280px;
+    overflow: hidden;
+}
+
+/*таблица Адрес*/
+.box_textContacts ul {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    text-align: left;
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+/*таблица контакты*/
+.box_textContacts {
+    width: 50%;
+    padding: 39px 38px 41px 66px;
+    margin-bottom: 10px;
+}
+
+.box_textContacts form {
+    font-style: italic;
+    color: #242424;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: left;
+    margin-bottom: 31px;
+}
+
+.box_textContacts .mail {
+    background-color: gray;
+    color: snow;
+    size: 5;
+}
+
+.box_textContacts input {
+    background-color: snow;
+    color: black;
+    size: 5;
+    text-transform: capitalize;
+}
+
+.box_textContacts input::-moz-placeholder {
+    background-color: cornsilk;
+    font-weight: 10;
+    color: #CCC;
+}
+
+.box_textContacts input::-webkit-input-placeholder {
+    background-color: cornsilk;
+    font-weight: 10;
+    color: #CCC;
+}
+
+.box_textContacts textarea {
+    background-color: snow;
+    color: black;
+    text-transform: capitalize;
+}
+
+.box_textContacts textarea::-webkit-input-placeholder {
+    height: 100px;
+    background-color: cornsilk;
+    color: #CCC;
+    text-transform: capitalize;
+}
+
+.box_textContacts textarea::-moz-placeholder {
+    background-color: cornsilk;
+    font-weight: 10;
+    color: #CCC;
+}
+
+.box_textContacts .button input {
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background: rgb(64, 199, 129);
+    box-shadow: 0 -3px rgb(53, 167, 110) inset;
+    transition: 0.2s;
+}
+
+.box_textContacts .button input {
+    background: rgb(33, 147, 90);
+    box-shadow: 0 3px rgb(33, 147, 90) inset;
+}
+
+/*Подвал*/
+.footer {
+    /* # == id */
+    background: url(img/footer.jpg) center no-repeat;
+    width: 100%;
+    float: left;
+    height: 100px;
+    text-align: right;
+    color: #a4a4a4;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 100px;
+    margin-top: 50px;
+}
+
+.footer p {
+    margin-right: 40px;
+}
